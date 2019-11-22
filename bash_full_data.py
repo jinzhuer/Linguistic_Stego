@@ -27,8 +27,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # parser.add_argument("--gpu", nargs='+', type=int, default=[4,5,6,7], help="gpu id to use")
     parser.add_argument("--gpu", nargs='+', type=int, default=[0,1,2,3], help="gpu id to use")
-    parser.add_argument("--bi_directional", nargs='+', type=str, default=["False", 'True'],
-                        help="whether to use bi-directional LSTM")
     parser.add_argument("--thread_num", type=int, default=4, help="process on each GPU")
     args = parser.parse_args()
     gpus = [str(x) for x in args.gpu]
