@@ -190,12 +190,6 @@ if __name__ == "__main__":
                         help="train data samples for each label, smaller than 1 means using all, and the value is the train ratio")
     parser.add_argument("--hidden_layers", type=int, default=3, help="hidden LSTM layer nums")
     parser.add_argument("--embedding_size", type=int, default=256, help="embedding size")
-    parser.add_argument("--num_hidden", type=int, default=200, help="hidden LSTM cell nums in each layer")
-    parser.add_argument("--hidden_layers_bi", type=int, default=2,
-                        help="hidden LSTM layer nums if bi_directional is true")
-    parser.add_argument("--num_hidden_bi", type=int, default=100,
-                        help="hidden LSTM cell nums in each layer if bi_directional is true")
-    parser.add_argument("--bi_directional", type=str, default="True", help="whether to use bi-directional LSTM")
     parser.add_argument("--fc_num_hidden", type=int, default=256, help="hidden full connect ceil nums before softmax")
 
     # parameters for training
